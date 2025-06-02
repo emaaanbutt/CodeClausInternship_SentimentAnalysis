@@ -5,11 +5,11 @@ def analyze_sentiment(text):
     polarity = blob.sentiment.polarity
 
     if polarity > 0:
-        return "Positive"
+        return "Positive 😊"
     elif polarity < 0:
-        return "Negative"
+        return "Negative 😞"
     else:
-        return "Neutral"
+        return "Neutral 😐"
 
 
 print("\nWelcome to Sentiment Analyzer!")
@@ -18,7 +18,7 @@ print("Type your sentence to analyze it. Type 'exit' to quit.\n")
 while True:
     user_input = input("Sentence : ")
     if user_input.lower() == "exit":
-        print("Goodbye!\n")
+        print("Goodbye!👋\n")
         break
 
     sentiment = analyze_sentiment(user_input)
